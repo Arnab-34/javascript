@@ -25,4 +25,4 @@ console.log(undefined>=0);
 
 // "===" strict datatype checking
 
-console.log("2" === 2);
+console.log("2" === 2);;
