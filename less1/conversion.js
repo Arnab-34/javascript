@@ -4,7 +4,7 @@ console.log(typeof(score));
 
 let valueInNumber /* its a variable */ = Number(score); // Number(use for typecasting) is an class and the naming convension is Fisrt letter in capital//
  console.log(valueInNumber);
- console.log(typeof valueInNumber)
+ console.log(typeof valueInNumber) 
 ;
 
 let scores = "33hdw" //let-is a datatype ,scores- is a variabe which stores the data "33hdw"
@@ -34,4 +34,6 @@ let valueInNumber4 /* its a variable */ = Boolean(scoressss); // Number(use for 
  console.log(valueInNumber4);
  console.log(typeof valueInNumber4)
 ;
+
+
 
