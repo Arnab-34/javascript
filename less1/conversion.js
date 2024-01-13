@@ -75,7 +75,7 @@ let num1, num2,num3
 num1=num2=num3=3+3
 console.table([num1,num2,num3]);
 
-// gamecouter operations
+// gamecouter operations prefix and postfix operations
  
 let gamecounter=23
 const y=gamecounter++;//postfit increment OUTPUT=24
