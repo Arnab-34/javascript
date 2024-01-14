@@ -86,3 +86,5 @@ const x= ++gamecounter2// prefix increment OUTPUT=
 console.log(`x:${x},gamecounter2:${gamecounter2}`);
 
 
+
+
