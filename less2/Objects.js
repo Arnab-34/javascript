@@ -1,6 +1,6 @@
 // singleton -  it is created by the constructor .
 // singleton - or if the singleton not created by the constructor it will created multiple instances
-//"new" is use to create Singleton Object or constructor object.
+//"new" keywod is use to create Singleton Object or constructor object.
 // "Arnab()" it is a constructor
 //constructor method (Object.create)
 
