@@ -17,7 +17,7 @@ console.log(Report.toPrecision(3));
 
 //////////////////
 
-const daam=new Number(23924030);
+const daam= new Number(23924030);
 console.log(daam.toLocaleString('en-IN'));//"toLocalstring()" use for the readabilaty of number easy.
 
 // +++++++++++++++++++MATHAMETICS++++++++++++++++++++++++++
