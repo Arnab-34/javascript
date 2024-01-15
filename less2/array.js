@@ -33,8 +33,16 @@ console.log(newarr3);
 
 //join??
 
-//convert into an array ise "Array.form" Method.
+//convert into an array is "Array.form" Method.
 let realarray= 'arnab';
 console.log(Array.isArray(realarray));
-arr3=Array.from('realarray')
+arr3=Array.from(realarray)
 console.log(arr3);
+///////////
+//For changing the datatype of multiple varialble we use( Array.of ) method.
+let s1=200
+let s2=133
+let s3=433
+
+const s4=(Array.from("s1","s2","s3"))
+console.log(s4);
