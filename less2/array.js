@@ -40,9 +40,12 @@ arr3=Array.from(realarray)
 console.log(arr3);
 ///////////
 //For changing the datatype of multiple varialble we use( Array.of ) method.
-let s1=200
-let s2=133
-let s3=433
+;
 
-const s4=(Array.from("s1","s2","s3"))
-console.log(s4);
+//"Array.of"is a Array method use to create a set of all elemnet.
+let ss1= 200
+let ss2= 133
+let ss3= 433
+
+console.log(Array.of(ss1,ss2,ss3));
+
