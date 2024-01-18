@@ -31,7 +31,7 @@ console.log(Userinfo)
 console.log(typeof Userinfo.Hashword);
 console.log(Userinfo.personal);
 
-//we can also use the nesting  Object.
+//we can also use the nesting  Object(object in object).
 
 const Newnested ={
     email:"akndl",
