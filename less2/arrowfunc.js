@@ -23,19 +23,19 @@ const neel= function(){
 
 neel();// OUTPUT=> Global Object ,global value.
 //////////////////
-//arrow Function Declaration type 1: Syntax: ()=>{}  
 
+//arrow Function Declaration type 1: Syntax: ()=>{}  
 const neel1= ()=> {
     
     usernameee="wan"
     console.log(this.usernameee);
 }
-neel1()
+neel1() 
 //
 //
 //arrow function Declaration type 2: Syntax=> const num= (num1,num2) => (num1+num2)
 
-const num= (num4,num5) => (num4+num5); console.log("Hi this is")
+const num= (num4,num5) => (num4+num5); console.log("Hi this is") //// implicit arrow scope
 
 console.log(num(2,4))
 
