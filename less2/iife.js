@@ -19,9 +19,9 @@
      num=num+1
      user="DB Connected"
      console.log(`${user}  ${num}`);
- })(1);//We must end it so error not occour
-
- //unnamed iife
+ })(1);
  ((name)=>{
     console.log(`welcome ${name}`);
  })('arnab');
+
+ /////////////////////
