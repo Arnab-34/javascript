@@ -14,7 +14,7 @@
     console.log(`welcome ${name}`);
 })('arnab');
 
-//Write two  iife in one file. 
+//Write two  "iife" in one file. 
 (function neel(num) {
      num=num+1
      user="DB Connected"
