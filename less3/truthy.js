@@ -6,7 +6,7 @@ if(UserEmail){
 }
 
 // Falsy Values=> !,0, -0,"",BinInt 0n,null,undefined,NaN
-//Truthy Values=> 1, "0",'flase'," ",{},function(){}
+//Truthy Values=> "0",'flase'," ",{},function(){}
 
 
 //Check the array is empty or not.
@@ -17,7 +17,7 @@ console.log("Aarry is Empty");
     console.log("Not an Empty Array");
 }
 
-//
+// check the Object is empty or not.
 const emptyObject={
     arnab:23 ,
     hemant:34
@@ -28,3 +28,4 @@ console.log("the object is empty");
     console.log("the object is not empty");
     console.log(emptyObject);
 }
+//

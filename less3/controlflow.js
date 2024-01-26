@@ -57,3 +57,15 @@ if(loggedin|| loggedviaemail){
             
 
 
+//Nullish Coalescing Operator (??):null undefined (Use for Error handeling)
+let val1;
+//val1=5??10
+//val1=null??10
+val1=undefined??15
+
+console.log(val1);
+
+//Ternary Oparator
+//condition? true:false
+const iceteaprice=100
+iceteaprice<=80 ? console.log("Less than 80"):console.log("more than 80");
