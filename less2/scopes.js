@@ -50,7 +50,7 @@ if (true){
 //Write an function to take input and add some number the number
 //two type of syntax in the Function declaration 
 //IN this syntax we can access it before the function declaration beacause (we can not store the function in a variable )
-comsole.log(addtwonum(1))
+console.log(addtwonum(1))
 function addtwonum(num1/* parameters*/){
     //definition
     return num1+3
