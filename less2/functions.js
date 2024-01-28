@@ -1,6 +1,6 @@
 //Functions: it is a package of code which perform some particular operations.
 //and by asigning the name of the Function() we can access it anywhere.
-//Function have ascope and a definition.
+//Function have scope and a definition.
 
 // function syntax=> funtion funtion_name(){defination/scope}
 
@@ -38,8 +38,7 @@ function calculateCartprice(...num5){
     return num5
 }
 
-console.log(calculateCartprice("200","334","232")
-);
+console.log(calculateCartprice("200","334","232"));
 
 //Passing Object into Function.
 const calculate={
