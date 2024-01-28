@@ -148,3 +148,20 @@ let userBooks= book.filter( (need)=> {
     return need.publish >=1985 && need.genre==="History" })
 console.log(userBooks);
 
+//
+//add 10 in each number in array
+
+const arr6=[1,2,3,4,5,6,7,8,9,10]
+let added =arr6.map( (add)=>{return add+1} )
+
+console.log(added);
+
+//chaining
+
+const arr7=[1,2,3,4,5,6,7,8,9,10]
+const chain=arr7
+         .map( (mul)=>{return mul*10})
+         .map( (add)=>{return add+1})
+         .filter((num)=> num>=40)
+
+console.log(chain);
