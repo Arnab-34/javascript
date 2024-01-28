@@ -42,13 +42,13 @@ console.log(calculateCartprice("200","334","232"));
 
 //Passing Object into Function.
 const calculate={
-    price:"jdsk",
-    items:"3",
+    user:"jdsk",
+    price:"3",
     total:"221"
 }
 
 function CalcuateOverall(anyobject) {
-    console.log(`user is :${anyobject.price} and the price is:${anyobject.items}`);
+    console.log(`user is :${anyobject.user} and the price is:${anyobject.price}`);
     
 }
 CalcuateOverall(calculate)
@@ -56,7 +56,7 @@ CalcuateOverall(calculate)
 // Array 2nd value print in the function to call the object
 
 
-   const arr= [300,400,500]
+const arr= [300,400,500]
 function Arry(sec){
    return sec[2]
 }
