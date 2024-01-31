@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARANAB</title>
+</head>
+
+<body style="background-color: black ; color: #fff;">
+    <ul class='language'>
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    //    const div=document.createElement('div')
+    //    console.log(div);
+
+    //add an list item in the document 
+    // function addlanguage( /* class name */langName){
+    //      const li = document.createElement('li')//creating Element in the document  
+    //      li.innerHTML= `${langName}`;//add value in the li elemnet.
+    //      const atach= document.querySelector('.language')//attached the li element in that.
+    //      .appendChild(/*valriable*/li)//adding the child element in the parent node.
+    //              }  
+    // addlanguage("python")
+
+    //Optimize way to add an list item and value in the document.
+
+    function addlanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild/* adding a child node in the list*/(/*creating text node */ document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addlanguage("python")
+
+    //Edit  nth- child of the list item.
+    const seclan=document.querySelector("li:nth-child(2)")
+    const add= document.createElement('li')
+    add.textContent= "MOJO"
+    seclan.replaceWith(add);
+
+    //Edit first list item
+    const firstLang= document.querySelector('li:first-child')
+    firstLang.outerHTML= '<li>Python</li>'
+   
+    //remove last list item
+   const lastLang= document.querySelector('li:last-child');
+   lastLang.remove()
+</script>
+
+</html>
