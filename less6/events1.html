@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body style= "background-color:black;">
+    <h2 style="color:white;">Amazing image</h2>
+    <div>
+        <ul id="images" style="color: aliceblue;">
+            <li><img width="200px" id="girl" alt="" src="https://images.pexels.com/photos/19936793/pexels-photo-19936793/free-photo-of-vicmary.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img></li>
+            <li><img width="200px" id="man" alt="" src="https://images.pexels.com/photos/20099562/pexels-photo-20099562/free-photo-of-a-smiling-man-in-glasses-and-a-sweater.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img></li>
+            <li><img width="200px" id="flower" alt="" src="https://images.pexels.com/photos/20139169/pexels-photo-20139169/free-photo-of-a-person-holding-a-flower-near-a-waterfall.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img></li>
+            <li><img width="200px" id="building" alt="" src="https://images.pexels.com/photos/19168627/pexels-photo-19168627/free-photo-of-a-balcony-with-flowers-on-it-and-a-balcony-with-a-balcony.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"></img></li>
+            <li><img width="200px" id="japan"alt="" src="https://images.pexels.com/photos/20075686/pexels-photo-20075686/free-photo-of-a-neon-sign-in-chinese-writing-on-a-building.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img></li>
+            <li><a style="color: aliceblue" href="https://www.google.com/" id="google" > Google</a></li>
+        </ul>
+    </div>
+    </ul>
+</body>
+<script>
+    // type,timestamp,defaultPrevented
+    // target,toElement,srcElement, currentElement
+    // clientX.clientY,screenX,screenY
+    //altkey,ctrlkey,shiftkey,keyCode
+
+
+    // //select elemnet  and when the particular event click , give an alert message (appurach no-1)
+    // document.getElementById('flower').onclick= function(){
+    //     alert("are u sure to continue with flower")
+    // }
+
+
+    //select elemnet  and click (approach no-2)
+//    document.getElementById('japan').addEventListener('click' , function(){
+//     alert("japan")
+//    })
+
+   //event Propogation [there are two type of event propogation concept:1 is=> Event Bubbleing,2=> is Event Capturing]
+   //event bubbling=> this event is executed low to high bubble(SYNTAX=> document.getElementById('___').addEventListener( '___', function(){},false)
+   //event capturing=> only this event is executed top to bottom.(SYNTAX=> document.getElementById('___').addEventListener( '___', function(){},true)
+   
+   //Example of event capturing.
+//    document.getElementById('images').addEventListener('click' , function(e){
+//     console.log("clicked inside the ul")
+//    },true)
+
+//    document.getElementById('building').addEventListener('click' , function(e){
+//     alert("building")
+//     console.log("building")
+//    },true)
+
+//    //Example of Event bubbling
+
+//    document.getElementById('images').addEventListener('click' , function(e){
+//     console.log("clicked inside the ul")
+//    },false)
+
+//    document.getElementById('building').addEventListener('click' , function(e){
+//     alert("building")
+//     console.log("building")
+//    },false)
+
+//to stop propogation or stop the event bubbling or captuing we use the Method: stopPropogation();
+// document.getElementById('images').addEventListener('click' , function(e){
+//     console.log("clicked inside the ul")
+//    },false)
+
+//    document.getElementById('building').addEventListener('click' , function(e){
+//     alert("building")
+//     console.log("building")
+//     e.stopPropagation();//stop propogation is method.
+//    },false)
+
+//    to Prevent the default behaviour of any tag we us the method: pereventDfault()
+//  document.getElementById('google').addEventListener('click' , function(e){
+    
+//   console.log("google clicked")
+//     e.preventDefault();//default behaviour prevented successfully.
+//    },false)
+
+
+document.querySelector("#images").addEventListener('click', function(e){
+   
+    if( e.target.tagName === 'IMG' ){
+        let removeIt =e.target.parentNode;
+        removeIt.remove()//method
+    }
+})
+
+
+</script>
+</html>
