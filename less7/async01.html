@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arnab Karmakar </h1>
+    <button id="btn1">Start</button>
+    <button id="btn2">Stop</button>
+    
+</body>
+<script>
+    
+    //for start
+    let interval;
+    const started= function (){ 
+        interval= setInterval(ab,2000)
+        console.log("started");
+        function ab (){
+            document.querySelector("h1").innerHTML="A"
+            console.log("hi");
+        }
+    }
+    
+    document.querySelector("#btn1").addEventListener('click',started)
+
+    //for stop
+   const stop= function(){
+    clearInterval(interval)
+   }
+
+   document.querySelector("#btn2").addEventListener('click',stop)
+
+
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arnab Karmakar </h1>
+    <button id="btn1">Stop</button>
+    
+</body>
+<script>
+
+    //setTimeout() => is an function (where we set a time to execute an process or funtion one time. )
+    //approach  no -1
+    // setTimeout( function(){
+    //     console.log("arnab");
+    // }, 2000,false)
+    
+    // //approach no -2
+    // const arnab =  function(){
+    //     console.log("arnab2")
+    // } 
+    // setTimeout(arnab,1000)
+
+
+    //change the h1 element inner text.
+    const changeHtmlInner= function(){
+           
+            
+        document.querySelector('h1').innerHTML="hi mister"
+    }
+    const out = setTimeout(changeHtmlInner,2000);
+
+    
+    //to stop the change the text we use => clearTimeout()
+    document.querySelector("#btn1").addEventListener('click', function(){
+        
+        clearTimeout(out)
+        console.log("stoppped")
+    })
+
+
+
+
+    //
+
+
+</script>
+</html>
