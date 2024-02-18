@@ -70,4 +70,8 @@ console.log(Wat.greetingTwo());
 
 console.log(Wat.greeting);
 
+//Object cloning
 
+let new_Object= Object.assign( {},Wat, {role: 'Developer'})
+
+console.log(new_Object);
